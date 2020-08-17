@@ -13,9 +13,9 @@ body
 }
 header > div > img
 {
-    width: 200px;
+    width: 230px;
     position: absolute;
-    top: 8vh;
+    top: 5vh;
     left: 8vw;
     /* transform: translateY(-50px); */
 }
@@ -42,6 +42,7 @@ header > div:nth-last-of-type(2) p
     color: #ACACAC;
     cursor: pointer;
     margin-top: 0;
+    font-size: 13px;
 }
 header > div:nth-last-of-type(2) p:nth-of-type(1)
 {
@@ -61,6 +62,7 @@ header button
     font-size: 12px;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 .fa-bars
 {
@@ -116,9 +118,11 @@ main section aside:first-of-type
 }
 main section h1
 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
     margin: 0;
+    padding:0;
+    line-height: 55px;
 }
 main section aside:nth-of-type(2) img
 {
@@ -135,11 +139,15 @@ main section aside:nth-of-type(1) div:nth-of-type(1)
 main section aside:nth-of-type(1) div:nth-of-type(1) h3
 {
     font-size: 12px;
+    margin-bottom: 20px;
 }
 main section aside:nth-of-type(1) p
 {
     color: #ACACAC;
     font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 main section aside:nth-of-type(1) button
 {
@@ -165,7 +173,11 @@ main section aside:nth-of-type(1) div:nth-of-type(1) h3
     }
     main section h1
     {
-        font-size: 30px;
+        font-size: 40px;
+        font-weight: 600;
+        margin: 0;
+        padding:0;
+        line-height: 50px;
     }
     main section
     {
@@ -185,19 +197,29 @@ main section aside:nth-of-type(1) div:nth-of-type(1) h3
     }
 }
 /* footer */
-footer div i
-{
-    font-size: 40px;
-    color: white;
-    background-color: black;
-    border-radius: 50%;
-    box-shadow: 0px 0px 2px 2px white;
+
+#arrows{
+    display: flex;
 }
-footer div i:first-of-type
-{
-    color: #6A7BFF;
-    background-color: white;
-    margin-right: 10px;
+
+
+.left-a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #6a7bff;
+    color: white;
+    margin-right: 20px;
+}
+
+.right-a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #fefefe;
+    box-shadow: 0 12px 16px 0  rgb(0,0,0,0.13);
 }
 footer
 {
@@ -218,19 +240,14 @@ footer p
 }
 @media(max-width: 600px)
 {
-    footer div i
-    {
-        font-size: 30px;
-    }
+
     footer
     {
         width: 80vw;
         display: flex;
         justify-content: space-between;
         padding-bottom: 10px;
+        margin-top: 20px;
     }
-    footer div:nth-of-type(2)
-    {
-        transform: translateY(-10px);
-    }
+
 }
